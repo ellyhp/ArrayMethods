@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
     <title>Arrays website</title>
 </head>
 <body>
@@ -30,12 +31,23 @@
                         <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
                     
                         <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
-                        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                                <div class="sm:flex sm:items-start">
-                                    <!-- content -->
-                                </div>
+                        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0 ">
+                            <div class="relative transform overflow-hidden rounded-lg w-full  bg-white text-left shadow-xl transition-all">
+                            <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4 w-full flex justify-center">
+                                <pre>
+                  
+                                    <code>
+                                            let ArrayUnshift = ['🍔', '🍕', '🌭'];
+                                            let ApplyArrayMethod = ArrayUnshift.unshift('🍟');
+                                            console.log(ArrayUnshift);
+                                            
+                                            >['🍟','🍔', '🍕', '🌭']
+
+                                            //adds the specified elements to the beginning of an array and 
+                                            //returns the new length of the array.
+                                    </code>
+                                </pre>
+                     
                             </div>
                             <div class="bg-gray-50 flex gap-5 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                                 <a href="#_" id="btn-unshift" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
@@ -49,11 +61,12 @@
                         </div>
                     </div>
                   
-                <a href="#_" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+                <a href="#" class="btnSelect relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
                     <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
                     <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
                     <span class="relative">Pop</span>
                 </a>
+
                 <a href="#_" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
                     <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
                     <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
@@ -86,8 +99,15 @@
                 </a>
             </div>
 
-    </div>
+            
 
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
     <script src="main.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
